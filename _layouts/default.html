@@ -34,5 +34,11 @@
         {{ content }}
       </section>
     </div>
+    
+    <footer>
+      <div class="container">
+        &copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}
+      </div>
+    </footer>
   </body>
 </html>
