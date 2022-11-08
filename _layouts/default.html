@@ -22,12 +22,28 @@
           padding: 20px 0;
           margin: 0 0 40px 0;
       }
+      #page-container {
+        position: relative;
+        min-height: 100vh;
+      }
+
+      #content-wrap {
+        padding-bottom: 2.5rem;    /* Footer height */
+      }
+
+      #footer {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        height: 2.5rem;            /* Footer height */
+      }
     </style>
   </head>
 
   <body>
-
-    <header>
+<div id="page-container">
+   <div id="content-wrap">
+     <header>
       <div class="container">
         <a id="a-title" href="{{ '/' | relative_url }}">
           <h1>{{ site.title | default: site.github.repository_name }}</h1>
@@ -41,11 +57,10 @@
         {{ content }}
       </section>
     </div>
-    
-    <footer>
-      <div class="container">
-        &copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}
-      </div>
-    </footer>
+   </div>
+   <footer id="footer">
+     &copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}
+  </footer>
+ </div>
   </body>
 </html>
