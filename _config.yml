@@ -2,7 +2,7 @@ title: My first page
 description: This is a basic testing page
 remote_theme: just-the-docs
 
-plugins:
-  - jekyll-default-layout
-
 url: https://rmakowski.github.io/
+
+aux_links:
+  Template Repository: https://github.com/rmakowski/rmakowski.github.io
