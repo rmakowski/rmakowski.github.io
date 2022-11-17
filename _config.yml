@@ -1,8 +1,5 @@
+remote_theme: pages-themes/hacker@v0.2.0
+plugins:
+- jekyll-remote-theme
 title: My first page
 description: This is a basic testing page
-remote_theme: just-the-docs
-
-url: https://rmakowski.github.io/
-
-aux_links:
-  Template Repository: https://github.com/rmakowski/rmakowski.github.io
