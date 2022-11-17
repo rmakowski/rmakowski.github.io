@@ -1,6 +1,6 @@
 title: My first page
 description: This is a basic testing page
-theme: just-the-docs
+remote_theme: just-the-docs
 
 plugins:
   - jekyll-default-layout
